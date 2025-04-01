@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --purple500: #281154;
+  --purple300: #270082;
+  --purple600: #1b0058;
+  --red600: #dc0000;
+  --body: #f9f6ff;
+  --max-width: 1200px;
+}
+*{
+    margin:0;
+    padding:0;
+    color:rgb(237, 232, 232);
+    box-sizing: border-box;
+}
+
+#navContainer{
+    display:flex;
+    justify-content:space-between;
+    background-color: #0000ff;
+    align-items: center;
+    font-size:20px;
+    position: sticky;
+    width:100%;
+    top: 0;
+    z-index: 100;
+    font-weight: 500;
+    padding:15px;
+}
+#features ul{
+    display:flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items:center;
+    padding-right:70px;
+}
+#logo{
+    padding-left:70px;
+}
+#features ul li{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding-right:20px;
+    font-size:18px;
+    font-weight: 500px;
+}
+
+ul a{
+    text-decoration: none;
+}
+#hero{
+    box-shadow: 0px 2px rgba(0, 0, 0.3, 0);
+    background-color: rgb(228, 212, 215);
+}
+.heroimg{
+    background-image: url("/CSS/Project6/images/hero_image.png");
+    min-height:100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width:100%; */
+    /* position:relative; */
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; 
+}
+#bgcontainer{
+    /* position:absolute; */
+    max-width:1000px;
+    margin:0 auto ;
+    display:flex;
+    flex-direction: column;
+    /* justify-content:center; */
+    /* align-items:center; */
+    gap:25px;
+    /* margin-top:50px; */
+}
+.container{
+    max-width:1000px;
+    margin:0 auto ;
+    text-align:center;
+    /* display:flex; */
+    /* background-color: #0000ff; */
+}
+#bgcontainer h2{
+    font-size:60px;
+
+}
+#tag{
+  font-size:25px;
+}
+#text{
+    font-size:20px;
+}
+#music{
+    background: var(--purple500);
+    min-height:100vh;
+}
+#buttoncontainer button{
+   background-color: red;
+   padding:15px;
+}
+.container1{
+    max-width:1100px;
+    margin:0 auto ;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap:30px;
+}
+#music{
+    padding:30px;
+}
+#music .container1 h2{
+ 
+  /* margin-bottom:10px; */
+  font-size: 35px;
+}
+.tag1{
+  font-size: 20px;
+  
+  /* padding-top:20px;
+  padding-bottom:20px; */
+
+}
+
+.text1{
+    /* margin-bottom:20px; */
+    font-size:20px;
+    /* line-height: 25px;; */ 
+}
+.buttoncontainer{
+    margin:20px;
+}
+#devices{
+    margin-bottom:40px;
+}
+.imgcontainer{
+    margin-top: -400px;
+    position: relative;
+    top: 400px;
+}
+#movie{
+    margin-top:400px;
+    /* position:absolute; */
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+   
+    /* bottom:400px; */
+
+}
+#movie .tag1{
+  color:black;
+  font-size:30px;
+  font-weight: 600;
+}
+#movie .text1{
+    color:black;
+    font-size:20px;
+    line-height: 2
+}
+#movie .buttoncontainer button{
+    background-color:blue;
+    padding:20px;
+}
+#music .buttoncontainer button{
+    background-color: blue;
+    color:white;
+    padding:20px;
+    font-width:500px;
+}
+#entertainment{
+    font-weight: 1000px;
+    background-image: url("/CSS/Project6/images/video.png");
+}
+#entertainment #text{
+    font-size: 20px;
+}
+/* #giftcard{
+    display: flex;
+    justify-content: space-around; 
+    align-content: center; 
+    margin:10px;
+    gap:30px;
+    max-width: 1000px; 
+    text-align: center;
+  
+} */
+#giftcard h3,
+#giftcard div,
+#giftcard p,
+#giftcard .buttoncontainer {
+    color: black !important; /* Forces black text */
+}
+
+#gifttext{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+   
+
+}
+#giftcard{
+    margin-bottom:40px;
+    box-shadow: 0px 3px rgba(0, 0, 0.4, 0);
+}
+#giftcard .buttoncontainer button{
+    padding:15px;/* Forces black text */
+    background-color: #0000ff;
+}
+.container2{
+ max-width:1000px;
+ margin: 0 auto;
+ display:flex;
+ gap:30px;
+ padding-top:40px;
+ /* margin:20px; */
+
+}
+#features-des h4 ,#features-des li{
+    /* color:black; */
+}
+#features-des{
+    background-color: #31039b;
+}
+.footer-links ul{
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+    font-size:15px;
+    color:rgb(205, 197, 197);
+    padding-bottom:15px;
+}
+.footer-links ul li{
+    padding:3px;
+    
+}
+.footer-links{
+    width:400px;
+    font-size:10px;
+}
+.footer-links h4{
+    padding-bottom:10px;
+    font-size:20px;
+}
+#footer{
+    background-color: #1b0058;
+    padding:18px;
+    text-align:center;
+}
