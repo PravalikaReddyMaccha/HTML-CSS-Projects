@@ -1,0 +1,342 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    /* color:black; */
+    /* color:white; */
+}
+body{
+    background-color: rgb(9, 9, 58);
+}
+header{
+    position:fixed;
+    top:0px;
+    width:100%;
+    z-index:1000;
+}
+nav ul{
+    display:flex;
+    justify-content:space-around;
+    background-color: black;
+    position:sticky;
+    color:white;
+    padding:20px;
+    font-weight:500;
+    gap:20px;
+}
+ul a{
+    text-decoration: none;
+    list-style-type: none;
+    color:white;
+    font-size: 18px;
+}
+ul a:hover{
+    color:aqua
+}
+#home{
+   
+    /* color:black; */
+    min-height:100vh;
+    padding-top:60px;
+    }
+#name {
+    font-size: 80px;
+    width:1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom:50px;
+    animation: move-back-and-forth 4s linear infinite alternate;
+   
+}
+.name {
+    font-size: 60px;
+    width:1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom:50px;
+   
+}
+.name i{
+    color:aqua;
+}
+
+@keyframes move-back-and-forth {
+    0% {
+        transform: scale(1); 
+    }
+    100% {
+        transform: scale(1.2); 
+    }
+}
+.container{
+    width:1200px;
+     margin:0 auto;
+     box-shadow: 0px 3px black;
+     
+}
+#hero{
+ 
+    margin-top:100px;
+    display:flex;
+    justify-content: space-between;
+    padding-bottom:40px;
+    padding-left:100px;
+}
+#heroimage img{
+    border-radius:50%;
+    width:400px;
+    height:400px;
+    filter: drop-shadow(0 0 0.75rem aqua);
+}
+#intro{
+    height:300px;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    color:white;
+    justify-content: center;
+    align-items: flex-start;
+    font-size:20px;
+}
+#typing-heading{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid orange; 
+    font-size: 40px;
+    animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }
+  
+#intro p{
+    font-size:20px;
+    line-height: 30px;
+}
+#intro{
+    margin-left:100px;
+}
+#education {
+    text-align: center;
+    padding: 50px;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: auto auto; 
+    gap: 60px; 
+    width: 50%;
+    margin: 0 auto;
+}
+
+.education-box {
+    background-color:rgb(22, 21, 21);
+    /* color: white; */
+    text-align:left;
+    padding-left: 20px;
+    padding-top:20px;
+    padding-right:10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color:aqua;
+    width:300px;
+    color:white;
+}
+.education-box h3{
+    text-align: center;
+    padding-bottom:20px;
+}
+.education-box p{
+    padding-bottom:10px;
+}
+.education-box:nth-child(3) {
+    grid-column: span 2; 
+    justify-self: center; 
+}
+#projects{
+    padding-top:20px;
+}
+.project_container{
+   display:grid;
+   grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+   grid-gap:2rem;
+   padding-bottom:40px;
+}
+.grid_item{
+    display:grid;
+    place-items:center;
+}
+.card{
+    width:320px;
+    display:flex;
+    flex-direction:column;
+    border-radius:0.5rem;
+    overflow:hidden;
+    transition:0.3s ease-in-out;
+    /* color: */
+}
+.card:hover{
+    transform:scale(1.05);
+    transition:1s  ease-in-out;
+}
+.card:hover img{
+    transform:scale(1.05);
+    transition:1s ease-in-out;
+}
+.card_content{
+    padding:2rem;
+    position:relative;
+    top:-5.5rem;
+    margin-bottom:-5.5rem;
+    transition:0.5s ease-in-out;
+    color:white;
+}
+.card_content:hover {
+    background:white;
+    color:var(--dark-color) !important;
+    
+}
+.card_content h3{
+    text-align: center;
+}
+#skills .project_container{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(200px,10fr));
+    grid-gap:30px;
+    grid-column: 3;
+ }
+ #skills{
+    padding-top:20px;
+ }
+ #skills .card img{
+    width:200px;
+    height:200px;
+ }
+ .card_content1{
+    padding:2rem;
+    position:relative;
+    top:-5.5rem;
+    margin-bottom:-5.5rem;
+    transition:0.5s ease-in-out;
+}
+ #skills .project_container .card_content1:hover{
+    padding:2rem;
+    position:relative;
+    top:-5.5rem;
+    margin-bottom:-5.5rem;
+    transition:0.5s ease-in-out;
+    transform:translateY(100px);
+    color:black;
+    width:200px;
+    text-align: center;
+ }
+ #skills .project_container{
+    margin-bottom:40px;
+ }
+ #skill{
+    text-align: left;
+    font-size:40px;
+    margin-bottom:40px;
+    color:white;
+    margin-top:10px;
+ }
+ .project_container1{
+    display:flex;
+    grid-template-columns:repeat(2,minmax(50px,1fr));
+    padding-bottom:20px;
+ }
+ .dsa{
+    padding-bottom:20px;
+ }
+.dsa img{
+    height:60px;
+    width:60px;
+
+ }
+ .grid_item1{
+    display:flex;
+    text-align: center;
+    justify-content: space-evenly;
+    padding-left:50px;
+}
+#experience .name{
+    background-color: black;
+    padding:20px;
+}
+#experience{
+    background:grey;
+    margin-bottom: 20px;
+    padding-top:30px;
+    margin-top:20px;
+}
+#exp{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    padding-bottom:30px;
+    box-shadow: 10px 10px rgba(0.4, 0.4, 0.4, 0.3);
+}
+#logo img{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+}
+#exp h3{
+    padding-bottom:20px;
+    font-size:30px;
+}
+#exp h5{
+    padding-bottom:15px;
+    font-size:22px;
+}
+#connect{
+    margin-bottom:30px;
+}
+.networking img{
+    height:60px;
+    width:60px;
+    border-radius:50%;
+}
+.networking{
+    display:flex;
+    justify-content: center;
+    gap:40px;
+    padding-bottom:20px;
+}
+.network{
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+footer{
+    background-color: black;
+    padding:20px;
+    color:white;
+    text-align: center;
+}
+.networking a{
+    text-decoration: none;
+    color:white;
+    font-size:18px;
+}
